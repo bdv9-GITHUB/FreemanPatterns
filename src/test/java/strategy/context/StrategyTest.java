@@ -1,19 +1,28 @@
 package strategy.context;
 
-public class StrategyExample {
-    public static void main(String[] args) {
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class StrategyTest {
+    public StrategyTest() {
+
+    }
+
+    @Test
+    void testStrategy() {
         Context context = new Context();
 
         // Выбор стратегии сложения
         context.setStrategy(new ConcreteStrategyAdd());
-        System.out.println(context.executeStrategy(1, 2));
+        assertEquals(2, context.executeStrategy(1, 1));
 
         // Выбор стратегии вычитания
         context.setStrategy(new ConcreteStrategySubtract());
-        System.out.println(context.executeStrategy(4, 3));
+        assertEquals(1, context.executeStrategy(4, 3));
 
         // Выбор стратегии умножения
         context.setStrategy(new ConcreteStrategyMultiply());
-        System.out.println(context.executeStrategy(5, 6));
+        assertEquals(30, context.executeStrategy(5, 6));
     }
 }
