@@ -1,6 +1,6 @@
-package decorator.starbuzz.condiment;
+package decorator.condiment;
 
-import decorator.starbuzz.beverage.Beverage;
+import decorator.beverage.Beverage;
 
 public class Whip extends CondimentDecorator {
     Beverage beverage;

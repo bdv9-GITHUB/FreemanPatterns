@@ -1,10 +1,10 @@
-package decorator.starbuzz;
+package decorator;
 
-import decorator.starbuzz.beverage.Beverage;
-import decorator.starbuzz.beverage.DarkRoast;
-import decorator.starbuzz.beverage.Espresso;
-import decorator.starbuzz.condiment.Mocha;
-import decorator.starbuzz.condiment.Whip;
+import decorator.beverage.Beverage;
+import decorator.beverage.DarkRoast;
+import decorator.beverage.Espresso;
+import decorator.condiment.Mocha;
+import decorator.condiment.Whip;
 
 public class StarBuzz {
     public static void main(String[] args) {

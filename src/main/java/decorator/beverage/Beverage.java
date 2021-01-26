@@ -1,4 +1,4 @@
-package decorator.starbuzz.beverage;
+package decorator.beverage;
 
 public abstract class Beverage {
     private String description = "Unknown";

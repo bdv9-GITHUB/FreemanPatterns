@@ -1,6 +1,6 @@
-package decorator.starbuzz.condiment;
+package decorator.condiment;
 
-import decorator.starbuzz.beverage.Beverage;
+import decorator.beverage.Beverage;
 
 public class Chocolate extends CondimentDecorator {
     Beverage beverage;
