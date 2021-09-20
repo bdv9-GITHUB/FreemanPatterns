@@ -1,6 +1,10 @@
 package decorator.beverage;
 
+
+import java.util.logging.Logger;
+
 public abstract class Beverage {
+    static Logger logger = Logger.getLogger(Beverage.class.getName());
     private String description = "Unknown";
 
     public String getDescription() {
@@ -14,6 +18,8 @@ public abstract class Beverage {
     public abstract double cost();
 
     public void print() {
-        System.out.println(this.getDescription() + " - " + this.cost());
+        String log = this.getDescription() + " - " + this.cost();
+        logger.info(log);
+//                System.out.println(this.getDescription() + " - " + this.cost());
     }
 }
